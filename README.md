@@ -100,3 +100,30 @@ After cloning three samples in each technique, the third one has been chosen -Lo
 The third technique has been chosen based on how accurate the model is to convert the text to speech. This was done by converting the cloned audio to the text again and calculating the similarity between the original text and the one from the cloned audio.
 
 ### 3) The Classifier:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+[//]: # (____________________________________ CONCLUSION____________________________________)
+
+<img src="https://media4.giphy.com/media/MbMUCH4MUffka1ZFeT/giphy.gif?cid=790b7611040baf4e7332c491694685e3367d8fe931cd7a69&rid=giphy.gif&ct=s"  width="80" height="60" align="left">
+
+## Conclusion:
+<hr style="height:1.5px;border-width:10;color:blue;background-color:black">
+
+Different model hyperparameters were tested and in general, some of the models prefer well in the range of **10** epochs. From the training and optimization section, it's clear this data prefer a learning rate of around 0.001 and tanh activation function better than relu. Our best model test score is `99.7%` with a loss equal to `0.046`.
+
