@@ -1,3 +1,4 @@
+
 [//]: # (____________________________________PROJECT TITLE____________________________________)
 
 <br>
@@ -87,14 +88,14 @@ Build a machine learning system to detect if a spoken audio is synthetically gen
 - Long Audio with a short text.
 - Long Audio with a long text.
 
-Before explaining each technique, we need to know that, in the TIMIT data we have train and test data, in each dataset we have 168 speakers with 10 short audio files (around 4s). 
+Before explaining each technique, we need to know that, in the TIMIT data we have train and test data, in each dataset we have **168** speakers with 10 short audio files **(around 4s)**. 
 
-In "Short Audio with a short text", the original files have been cloned with one short sentence, and in "Short Audio with a long text", the same files have been cloned but with two-sentence instead of one to have a longer sentence and to see how the cloning model will works. Here are three samples that are used in the short audio version:
+In `"Short Audio with a short text"`, the original files have been cloned with one short sentence, and in `"Short Audio with a long text"`, the same files have been cloned but with two-sentence instead of one to have a longer sentence and to see how the cloning model will works.
 
-On the other hand, both the "Long Audio with a short text" and "Long Audio with a long text", are using different versions of the audio files. As mentioned before, we have 168 speakers which mean 336 in total. Each speaker's audio files have been merged into one file and cloned later. Both of the techniques use a short sentence and a longer one to see how the cloning model will work. Here are three samples that are used in the long audio version:
+On the other hand, both the `"Long Audio with a short text"` and `"Long Audio with a long text"`, are using different versions of the audio files. As mentioned before, we have **168** speakers which mean **336** in total. Each speaker's audio files have been merged into one file and cloned later. Both of the techniques use a short sentence and a longer one to see how the cloning model will work. Here are three samples that are used in the long audio version:
 
 ### 2) Voice Cloning:
-After cloning three samples in each technique, the third one has been chosen -Long audio with a short sentence- and all of the 336 files have been cloned and saved.
+After cloning three samples in each technique, the third one has been chosen -Long audio with a short sentence- and all of the **336** files have been cloned and saved.
 
 The third technique has been chosen based on how accurate the model is to convert the text to speech. This was done by converting the cloned audio to the text again and calculating the similarity between the original text and the one from the cloned audio.
 
