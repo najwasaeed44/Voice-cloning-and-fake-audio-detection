@@ -101,14 +101,25 @@ The third technique has been chosen based on how accurate the model is to conver
 
 ### 3) The Classifier:
 
+In the classifier, two techniques are used: 
+1) Real audio data VS. Cloned audio data. 
+2) Real audio data VS. Cloned audio data with removing the noise.
+
+In the first technique, the classifier perfectly distinguishes between both classes. In the second one, the classifier makes 6 false predictions, 2 for classifying fake audios as real and the rest for classifying real audios as fake.
 
 
 
 
 
+<br>
+<div align="center"><img src="assest/train_val_loss.png"  width="600px" height="400px"></div>
+<p align="center">Train VS. val loss for `Real audio data VS. Cloned audio data with removing the noise`</p>
+<br><br>
 
 
-
+<br>
+<div align="center"><img src="assest/confusion_matrix.png"  width="600px" height="400px"></div>
+<p align="center">Confusion matrix for `Real audio data VS. Cloned audio data with removing the noise`</p>
 
 
 
@@ -125,5 +136,5 @@ The third technique has been chosen based on how accurate the model is to conver
 ## Conclusion:
 <hr style="height:1.5px;border-width:10;color:blue;background-color:black">
 
-Different model hyperparameters were tested and in general, some of the models prefer well in the range of **10** epochs. From the training and optimization section, it's clear this data prefer a learning rate of around 0.001 and tanh activation function better than relu. Our best model test score is `99.7%` with a loss equal to `0.046`.
+In this project, voices cloning has been done, to me and to my hearing some of the cloned audios seem like a real one or a real person but with noise in the background, even with this, the machine can classify both of the classes perfectly or with high accuracy if we remove the noise. In general, more samples for each speaker lead to more accurate cloning.  
 
